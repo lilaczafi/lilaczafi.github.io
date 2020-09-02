@@ -1,5 +1,5 @@
 * {
-	margin: 0;
+    margin: 0;
     padding: 0
 }
 
@@ -19,50 +19,84 @@ body {
     height: 10%;
     font-size: 30px;
     text-align: center;
-    padding: 20px
+    padding: 20px 0px;
+    /*border: 1px solid*/
 }
 
-#seccionUno {
+#contenido {
     width: 100%;
-    height: 30%;
-    padding: 20px 10px
+    height: 70%;
+    display: flex;
+    flex-flow: row wrap;
+    /*border: 1px solid*/
 }
 
-#seccionUno > header {
-    text-align: center
+h2 {
+    height: 6%;
+    text-align: center;
+    padding: 8px 0px;
+    /*border: 1px solid*/
+}
+
+#articuloUno {
+    flex-basis: calc(100% / 2);
+    height: 40%;
+    /*float: left;*/
+    order: 1;
+    text-align: justify;
+    vertical-align: center;
+    padding: 10px 0px 20px;
+    /*border-top: 1px solid; 
+    border-bottom: 1px solid;*/
+}
+
+#articuloDos {
+    flex-basis: calc(100% / 2);
+    height: 40%;
+    /*float: right;*/
+    /*border: 1px solid;*/
+    order: 2;
 }
 
 img {
-    width: 10%;
-    height: 10%;
+    width: 20%;
+    height: 80%;
+    text-align: center;
     border-radius: 50%
 }
 
-#seccionDos {
-    width: 50%;
-    height: 20%;
+#articuloTres {
+    flex-basis: calc(100% / 2);
+    height: 40%;
+    order: 3;
     text-align: center;
-    float: left;
-    padding: 30px 0
+    /*float: left;*/
+    padding: 30px 0px;
+    /*border-top: 1px solid; 
+    border-bottom: 1px solid;*/
 }
 
 ul {
     text-align: left
 }
 
-#seccionTres {
+#articuloCuatro {
     font-family: 'Nova Mono', monospace;
-    width: 50%;
-    height: 20%;
+    flex-basis: calc(100% / 2);
+    height: 40%;
+    order: 4;
     text-align: center;
-    float: left;
-    padding: 30px 0
+    /*float: right;*/
+    padding: 30px 0px;
+    /*border: 1px solid*/
 }
 
 footer {
     clear: both;
     background-color: #d5bddd;
-    padding: 30px;
+    padding: 10px 0px;
     width: 100%;
-    text-align: center
+    height: 10%;
+    text-align: center;
+    /*border: 1px solid*/
 }
